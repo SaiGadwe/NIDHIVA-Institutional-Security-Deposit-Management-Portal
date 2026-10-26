@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","surface-container-highest":"#d5e3fc","inverse-surface":"#233144","primary-fixed":"#d9e2ff","on-secondary":"#ffffff","primary":"#00163d","error":"#ba1a1a","outline-variant":"#c4c6d0","surface":"#f8f9ff","secondary-fixed":"#ffdcc3","surface-bright":"#f8f9ff","on-secondary-container":"#663500","tertiary-fixed":"#95f8a7","on-error-container":"#93000a","secondary":"#904d00","surface-container-lowest":"#ffffff","on-error":"#ffffff","surface-dim":"#ccdbf3","surface-container-high":"#dce9ff","error-container":"#ffdad6","secondary-container":"#fe932c","primary-fixed-dim":"#afc6ff","on-primary-fixed-variant":"#2d4678","surface-variant":"#d5e3fc","primary-container":"#0f2b5c","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","on-surface":"#0d1c2e","secondary-fixed-dim":"#ffb77d","background":"#f8f9ff","on-background":"#0d1c2e","tertiary-container":"#003514","on-tertiary-fixed-variant":"#005323","on-tertiary":"#ffffff","tertiary":"#001e08","on-primary-fixed":"#001944","on-secondary-fixed":"#2f1500","on-secondary-fixed-variant":"#6e3900","on-tertiary-container":"#45a75f","inverse-primary":"#afc6ff","on-primary-container":"#7c94cb","tertiary-fixed-dim":"#79db8d","on-tertiary-fixed":"#00210a","on-surface-variant":"#44464f","outline":"#747780","surface-tint":"#465d91","surface-container":"#e6eeff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"1rem","space-xs":"0.25rem","space-lg":"1.25rem","gutter-tablet":"1.25rem",gutter:"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem","gutter-desktop":"1.5rem","space-xl":"2rem","margin-desktop":"2.5rem","space-md":"0.75rem"},fontFamily:{"label-lg":["JetBrains Mono"],"headline-sm":["Inter"],"headline-lg-mobile":["Inter"],"display-mobile":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"label-md":["JetBrains Mono"],"headline-md":["Inter"],"body-md":["Inter"],display:["Inter"],"label-sm":["JetBrains Mono"],"body-sm":["Inter"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.025em",fontWeight:"500"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],display:["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 h-1 z-50 bg-gradient-to-r from-secondary via-surface-container-lowest to-tertiary-container"></div><aside class="fixed left-0 top-1 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-primary-fixed text-base">verified_user</span></div><div><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Gov. of India DPI</p><p class="font-headline-sm text-headline-sm text-primary tracking-tight">e-FDR Portal</p></div></div></div><nav class="flex-1 px-space-md space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg"><div class="pt-space-xs pb-space-xs px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Core Ledgers</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="fdr-repository" href="#"><span class="material-symbols-outlined text-[18px]">account_balance_wallet</span><span class="font-body-md text-body-md">Master FDR Register</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-sm transition-all bg-primary-container text-on-primary font-headline-sm rounded-lg" data-path="submit-new-fdr" href="#"><span class="material-symbols-outlined text-[18px]">upload_file</span><span class="font-body-md text-body-md">Submit New FDR</span><span class="ml-auto font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">Inst</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="release-and-refund-requests" href="#"><span class="material-symbols-outlined text-[18px]">assignment_return</span><span class="font-body-md text-body-md">Release &amp; Refund</span></a><div class="pt-space-md pb-space-xs px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Governance</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="regulatory-notifications" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md">Regulatory Alerts</span><span class="ml-auto font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container">3</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="compliance-reports" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span class="font-body-md text-body-md">Compliance &amp; MIS</span></a><div class="pt-space-md pb-space-xs px-space-sm"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Administration</span></div><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="user-and-institution-management" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span class="font-body-md text-body-md">Institutions &amp; Users</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="regulatory-audit-logs" href="#"><span class="material-symbols-outlined text-[18px]">policy</span><span class="font-body-md text-body-md">Regulatory Audit Logs</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="portal-settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-md text-body-md">System Settings</span></a></nav><div class="p-space-md bg-surface-container-high m-space-md rounded-xl"><div class="flex items-center gap-1.5 mb-1"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface uppercase">NIC Sovereign Cloud</span></div><p class="font-label-sm text-label-sm text-on-surface-variant">v4.2 | 256-bit TLS Encrypted | Live Sync</p></div></aside><div class="pl-72"><header class="fixed top-1 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-30 flex items-center justify-between px-gutter-desktop"><div class="flex items-center gap-space-md"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center"><span class="material-symbols-outlined text-primary text-xl">account_balance</span></div><div><h1 class="font-headline-sm text-headline-sm text-primary tracking-tight">अखिल भारतीय तकनीकी शिक्षा परिषद</h1><p class="font-label-sm text-label-sm text-on-surface-variant">e-FDR Compliance &amp; Security Deposit Management</p></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low px-space-sm py-1 rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-surface-variant text-base mr-1">badge</span><span class="font-label-sm text-label-sm text-on-surface-variant mr-2 uppercase">Role:</span><select class="bg-transparent font-label-md text-label-md text-primary font-medium focus:outline-none cursor-pointer pr-1"><option>Institution User (MH1001)</option><option>Verification Officer (Priya Sharma)</option><option>Bureau Head (Dr. Anita Mehta)</option><option>System Administrator</option><option>Read-Only Auditor</option></select></div><button aria-label="Notifications" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center justify-center font-bold">4</span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:block text-left"><p class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</p><p class="font-label-sm text-label-sm text-on-surface-variant">Scrutiny Officer (HQ-N04)</p></div><button aria-label="User Menu" class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-lg">expand_more</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-gutter-desktop pb-space-xl"><div class="py-space-md flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">home</span><span>/</span><span>Regulatory Operations</span><span>/</span><span class="text-primary font-semibold">Master Repository</span></div><div class="flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary-container font-medium"><span class="material-symbols-outlined text-sm">verified</span><span>DSC Certificate Active: SHA-256 Validated</span></div></div><div class="fixed bottom-space-lg right-space-lg z-50 pointer-events-none"><div class="pointer-events-auto bg-surface-container-lowest p-space-md rounded-xl shadow-[0_4px_12px_rgba(15,43,92,0.12)] flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary-container">cloud_done</span><span class="font-body-sm text-body-sm text-on-surface">Central Repository Synced With RBI NEFT/RTGS Gateway</span></div></div><div class="flex flex-col w-full">
+<!-- Sovereign Breadcrumb & Header Ribbon -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold bg-secondary-fixed/50 px-2 py-0.5 rounded">Statutory Lodgment Form A-1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+          APH Clause 4.14 Security Deposit
+        </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">New Fixed Deposit Receipt (FDR) Submission &amp; Compliance Lodgment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Form submitted under AICTE Approval Process Handbook (APH) 2024-25 Regulations</p>
+</div>
+<!-- Quick Institution Profile Badge -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-semibold text-primary">Rajiv Gandhi Inst. of Tech (MH1001)</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">PID: 1-334201889 • Regional Office: WRO Mumbai</p>
+</div>
+</div>
+</div>
+<!-- Interactive Stepper Ribbon -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative">
+<!-- Step 1 Button -->
+<button class="flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all bg-primary-container text-on-primary" id="stepper-tab-1" onclick="switchStep(1)">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary font-label-md text-label-md flex items-center justify-center font-bold" id="step-badge-1">01</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider block opacity-80">Primary Ledger</span>
+<span class="font-headline-sm text-headline-sm font-semibold truncate block">Instrument &amp; Bank Details</span>
+</div>
+<span class="material-symbols-outlined ml-auto text-primary-fixed">chevron_right</span>
+</button>
+<!-- Step 2 Button -->
+<button class="flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all text-on-surface-variant hover:bg-surface-container-high" id="stepper-tab-2" onclick="switchStep(2)">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md flex items-center justify-center font-bold" id="step-badge-2">02</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider block opacity-80">Evidence Vault</span>
+<span class="font-headline-sm text-headline-sm font-semibold truncate block">Document &amp; Lien Artifacts</span>
+</div>
+<span class="material-symbols-outlined ml-auto opacity-40">chevron_right</span>
+</button>
+<!-- Step 3 Button -->
+<button class="flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all text-on-surface-variant hover:bg-surface-container-high" id="stepper-tab-3" onclick="switchStep(3)">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md flex items-center justify-center font-bold" id="step-badge-3">03</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider block opacity-80">Affidavit &amp; Final</span>
+<span class="font-headline-sm text-headline-sm font-semibold truncate block">Declaration &amp; Lodgment</span>
+</div>
+<span class="material-symbols-outlined ml-auto opacity-40">gavel</span>
+</button>
+</div>
+</div>
+<!-- MAIN INTERFACE BODY -->
+<div class="relative">
+<!-- STEP 1 CONTAINER -->
+<div class="flex flex-col gap-space-lg" id="step-1-content">
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-lg">
+<!-- Main Form Column (2 Cols) -->
+<div class="xl:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Statutory FDR Instrument Parameters</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Provide original Fixed Deposit details hypothecated to Member Secretary, AICTE.</p>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-surface-container-low px-2.5 py-1 rounded flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-sm">lock_clock</span> APH 2024-25 Mandatory
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Institution Code (Pre-filled Locked) -->
+<div class="md:col-span-2 bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-medium uppercase mb-0.5">Originating Technical Institution (Pre-filled)</label>
+<div class="font-label-md text-label-md text-primary font-semibold">MH1001 • Rajiv Gandhi Institute of Technology, Versova, Andheri West, Mumbai (400053)</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-xl">verified</span>
+</div>
+<!-- FDR Number -->
+<div class="relative">
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="fdr-number">
+                FDR Unique Registration Number <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-space-sm bg-surface-container-lowest font-label-md text-label-md text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high transition-all" id="fdr-number" oninput="validateFdrNumber(this)" placeholder="e.g. FDR-2025-08912" type="text" value="FDR-2025-08912"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-tertiary-container text-base" id="fdr-valid-icon">check_circle</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Exact receipt number printed on physical bank certificate</p>
+</div>
+<!-- Purpose of Deposit -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="deposit-purpose">
+                Statutory Regulatory Purpose <span class="text-error">*</span>
+</label>
+<select class="w-full h-10 px-space-sm bg-surface-container-low font-body-md text-body-md text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high cursor-pointer" id="deposit-purpose" onchange="updatePurposeBadge(this)">
+<option value="New Technical Campus Approval">New Technical Campus Approval (Sec. 12)</option>
+<option selected="" value="Extension of Approval (EoA)">Extension of Approval (EoA) 2025-26</option>
+<option value="Introduction of New Technical Course">Introduction of New Technical Course (UG/PG)</option>
+<option value="Increase in Student Intake">Increase in Student Intake (Capacitation)</option>
+<option value="Annual Regulatory Compliance">Annual Regulatory Compliance Restitution</option>
+</select>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Classifies minimum lock-in tenure under Table 4.1</p>
+</div>
+<!-- Scheduled Commercial Bank -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="bank-name">
+                Scheduled Commercial Bank <span class="text-error">*</span>
+</label>
+<select class="w-full h-10 px-space-sm bg-surface-container-low font-body-md text-body-md text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high cursor-pointer" id="bank-name" onchange="handleBankSelect(this)">
+<option selected="" value="State Bank of India">State Bank of India (SBI)</option>
+<option value="Punjab National Bank">Punjab National Bank (PNB)</option>
+<option value="HDFC Bank">HDFC Bank Limited</option>
+<option value="ICICI Bank">ICICI Bank Limited</option>
+<option value="Canara Bank">Canara Bank</option>
+<option value="Bank of Baroda">Bank of Baroda</option>
+<option value="Axis Bank">Axis Bank Limited</option>
+<option value="Union Bank of India">Union Bank of India</option>
+</select>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Must be listed under RBI Second Schedule 1934</p>
+</div>
+<!-- IFSC Code with Auto-fetch -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="ifsc-code">
+                IFSC Code (11 Chars) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 px-space-sm uppercase font-label-md text-label-md bg-surface-container-lowest text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high transition-all" id="ifsc-code" maxlength="11" oninput="handleIfscInput(this)" placeholder="e.g. SBIN0001824" type="text" value="SBIN0001824"/>
+<span class="absolute right-2 top-2 font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-1.5 py-0.5 rounded font-bold" id="ifsc-status-badge">API Verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-tertiary-container mt-1" id="ifsc-helper">Verified: SBI Andheri West Branch, Mumbai</p>
+</div>
+<!-- Bank Branch Name & City -->
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="branch-details">
+                Issuing Branch Address &amp; District <span class="text-error">*</span>
+</label>
+<input class="w-full h-10 px-space-sm font-body-md text-body-md bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high" id="branch-details" type="text" value="Main Branch, SV Road, Andheri West, Greater Mumbai - 400058"/>
+</div>
+<!-- Deposit Amount -->
+<div class="md:col-span-2 bg-surface-container-low p-space-md rounded-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md items-center">
+<div>
+<label class="block font-label-md text-label-md font-semibold text-primary mb-1" for="deposit-amount">
+                    Security Deposit Principal Amount (₹) <span class="text-error">*</span>
+</label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-headline-sm text-headline-sm text-on-surface-variant">₹</span>
+<input class="w-full h-11 pl-8 pr- space-sm font-label-lg text-label-lg font-bold bg-surface-container-lowest text-primary rounded-lg focus:outline-none focus:bg-surface-container-high transition-all" id="deposit-amount" oninput="formatAndConvertAmount(this)" type="text" value="15,00,000"/>
+</div>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant font-medium uppercase mb-1">Amount in Statutory Words</span>
+<div class="p-2.5 bg-surface-container-lowest rounded-lg font-label-md text-label-md font-semibold text-secondary min-h-[42px] flex items-center" id="amount-in-words">
+                    Fifteen Lakh Rupees Only
+                  </div>
+</div>
+</div>
+</div>
+<!-- Issue Date -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="issue-date">
+                Date of Issue / Booking <span class="text-error">*</span>
+</label>
+<input class="w-full h-10 px-space-sm font-label-md text-label-md bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high" id="issue-date" onchange="calculateTenure()" type="date" value="2024-04-15"/>
+</div>
+<!-- Maturity Date -->
+<div>
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1" for="maturity-date">
+                Date of Maturity <span class="text-error">*</span>
+</label>
+<input class="w-full h-10 px-space-sm font-label-md text-label-md bg-surface-container-low text-on-surface rounded-lg focus:outline-none focus:bg-surface-container-high" id="maturity-date" onchange="calculateTenure()" type="date" value="2027-04-15"/>
+</div>
+<!-- Dynamic Tenure Calculation Display -->
+<div class="md:col-span-2 p-space-sm bg-surface-container-highest/60 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">timelapse</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Calculated Deposit Tenure:</span>
+<span class="font-label-md text-label-md font-bold text-primary ml-1.5" id="calculated-tenure">3 Years / 36 Months</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-2 py-0.5 rounded font-semibold" id="tenure-badge">Complies with APH Norms (Min 3 Yrs)</span>
+</div>
+</div>
+<!-- Bottom Actions Step 1 -->
+<div class="flex items-center justify-between pt-space-md">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-all flex items-center gap-1.5" onclick="showDraftToast()" type="button">
+<span class="material-symbols-outlined text-base">save</span> Save Draft
+            </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:bg-primary transition-all flex items-center gap-2 shadow-sm" onclick="switchStep(2)" type="button">
+              Proceed to Document Upload <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Sidebar / Context Rules Panel (1 Col) -->
+<div class="flex flex-col gap-space-md">
+<!-- Institutional Image Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden flex flex-col gap-space-sm">
+<div class="relative h-32 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern architectural view of Indian technical institute campus admin block with lush manicured gardens and Indian tricolor flag under a bright blue morning sky in Mumbai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA59Y9iD5yT1boj_8hoo4fthLMRNLiL8s64ENHi1_gtnpsQMoZFmpcViLdeXfUYY_qQ7b42ovIi0QthTndEoMiAO2VgsaoQYS5PIZNhUFoJHq5Ai1mqWmZK3DEP-13nwvapva-NnR223iu1S3v8E8-HVdg9v0nygFWUuhG_cLgeLQGt_7TnMJPUVEUEVhHxzfqfM4CTFqdTQ7hrA3MYvF_R1Dd2Zg_Jotz9rATi3FhdCPyygBNPsyZ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary font-bold">Rajiv Gandhi Inst. of Tech (MH1001)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Your statutory deposit balance is verified under the Regional Scrutiny Officer jurisdiction.</p>
+</div>
+<!-- Regulatory Policy Checklist Box -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-xl">gavel</span>
+<h4 class="font-headline-sm text-headline-sm font-bold">APH Clause 4.14 Rules</h4>
+</div>
+<ul class="space-y-2 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-base shrink-0 mt-0.5">check_circle</span>
+<span>Must be drawn in the <strong>joint names</strong> of Institution Society and "Member Secretary, AICTE".</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-base shrink-0 mt-0.5">check_circle</span>
+<span>Tenure must be strictly between <strong>3 to 8 years</strong> with auto-renewal mandate clause.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary-container text-base shrink-0 mt-0.5">check_circle</span>
+<span>Bank must issue an unconditional lien marking confirmation in government format.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">info</span>
+<span>Interest accrued is payable only to the institutional applicant upon regulatory release.</span>
+</li>
+</ul>
+<!-- Security Deposit Live Gauge / Donut Mini Viz -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Required Deposit Cap</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹35,00,000</span>
+<span class="font-label-sm text-label-sm text-tertiary-container block font-medium">₹20L Existing + ₹15L Current</span>
+</div>
+<div class="relative w-14 h-14 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-primary">100%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 2 CONTAINER -->
+<div class="hidden flex flex-col gap-space-lg" id="step-2-content">
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-space-lg">
+<!-- Main Upload Zone (2 Cols) -->
+<div class="xl:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Statutory Scanned Certificates &amp; Endorsement Letters</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Upload legally verified PDF scans with digital signatures or executive stamps.</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container bg-surface-container-low px-2.5 py-1 rounded font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">enhanced_encryption</span> NIC Anti-Virus 256-Bit
+            </span>
+</div>
+<!-- Document 1: Official Original FDR Scanned Copy -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">description</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">1. Scanned Copy of Original FDR Instrument</span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold uppercase">Mandatory</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF only (Max 10 MB)</span>
+</div>
+<!-- Upload Card 1 (Already Uploaded Demo State) -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold text-primary truncate">FDR_Original_SBI_15Lakhs_MH1001.pdf</p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2.4 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm">verified_user</span> ClamAV Virus Scanned: Clean ✓
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="p-1.5 text-primary hover:bg-surface-container-high rounded transition-all" title="View Document" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-error hover:bg-error-container rounded transition-all" title="Delete &amp; Re-upload" type="button">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Simulated Upload Progress Bar -->
+<div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Cryptographic Digest: SHA-256 e8f149...cd21</span>
+<span class="text-tertiary-container font-bold">100% Upload Complete</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-full transition-all duration-500"></div>
+</div>
+</div>
+</div>
+<!-- Document 2: Bank Joint-Name Endorsement Letter -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">account_balance</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">2. Bank Joint Hypothecation / Lien Endorsement</span>
+<span class="font-label-sm text-label-sm bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold uppercase">Mandatory</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Appendix 16 Format</span>
+</div>
+<!-- Upload Card 2 (Uploaded State) -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold text-primary truncate">SBI_Lien_Confirmation_Letter_Signed.pdf</p>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">1.8 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-sm">verified_user</span> Branch Seal Validated ✓
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="p-1.5 text-primary hover:bg-surface-container-high rounded transition-all" title="View Document" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+<button class="p-1.5 text-error hover:bg-error-container rounded transition-all" title="Delete &amp; Re-upload" type="button">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container w-full"></div>
+</div>
+</div>
+<!-- Document 3: Optional Trust Resolution / BoG Document -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">groups</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">3. Trust / Society Resolution for Security Deposit</span>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-primary px-1.5 py-0.5 rounded font-bold uppercase">Optional</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF, Max 5 MB</span>
+</div>
+<!-- Interactive Dropzone -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-all" id="dropzone-box" onclick="simulateFileUpload()">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-2xl">cloud_upload</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-primary font-semibold">Drag &amp; Drop Resolution PDF or <span class="text-secondary underline">Browse File</span></p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Resolution of governing body approving deposit creation</p>
+<div class="w-48 h-1 bg-surface-container-highest rounded-full mt-3 hidden overflow-hidden" id="dropzone-progress">
+<div class="h-full bg-secondary w-0 transition-all duration-1000" id="dropzone-bar"></div>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="flex items-center justify-between pt-space-md">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-all flex items-center gap-1.5" onclick="switchStep(1)" type="button">
+<span class="material-symbols-outlined text-lg">arrow_back</span> Back to Instrument Details
+            </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:bg-primary transition-all flex items-center gap-2 shadow-sm" onclick="switchStep(3)" type="button">
+              Proceed to Review &amp; Lodgment <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Sidebar Document Validation Summary -->
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-xl text-primary">fact_check</span> Document Verification Rules
+            </h4>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant pt-2">
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm font-bold text-primary block uppercase mb-1">Clause 4.14(c) Requirement</span>
+                Joint pledge must read: <em>"In joint names of President/Secretary of Society and Regional Officer, AICTE"</em>.
+              </div>
+<div class="p-2.5 bg-surface-container-low rounded-lg">
+<span class="font-label-sm text-label-sm font-bold text-primary block uppercase mb-1">Bank Signatory Seal</span>
+                Must bear Branch Manager or Chief Manager signature along with official P.A. (Personal Accountable) Code.
+              </div>
+</div>
+</div>
+<!-- Second Institution Image Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden flex flex-col gap-space-sm">
+<div class="relative h-36 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High resolution legal scrutiny desk with official stamp, digitally encrypted fixed deposit bank certificate document, reading glasses, and formal Indian institutional stationery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKV65GesH-1LMCglqAudiwo51OucKpV6AwJP96OUL_jei7G5LYExFKXPQgDNiWbFs1xGZ8usIo9Gn1IcpVv1IJDUV2hhSlKNEVBBVpKH5NFJmn_vampzk8mj3YAbFNZJKoz9AJmQMmO47HvOTpbyu2c6dtsNM1QxNpEcqQm4QhULHwwK4zD1KzjBQdmwqaW1F_dtGWUXgIEXKe-KOvB0vXVBjUvh0YNme6C4w0LsQQArTZRkMnGwH9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary font-bold">256-Bit SHA-256 Vault Scrutiny</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">All uploads are indexed into the sovereign AICTE Digilocker DPI register for non-repudiation.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 3 CONTAINER (Review & Submit) -->
+<div class="hidden flex flex-col gap-space-lg" id="step-3-content">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Review Banner -->
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-lg text-headline-lg text-primary">Pre-Submission Statutory Review Ledger</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Scrutinize and verify all lodging parameters prior to non-repudiation cryptographic commit.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-3 py-1 rounded-full font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> Ready for Official Lodgment
+          </span>
+</div>
+<!-- Consolidated Verification Ledger Bento -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card A: Financial Core -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Instrument &amp; Quantum</span>
+<div class="font-display text-display font-bold text-primary" id="review-amount">₹15,00,000</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold" id="review-words">Fifteen Lakh Rupees Only</p>
+<div class="mt-2 pt-2 text-on-surface-variant font-label-md text-label-md space-y-1">
+<div>FDR No: <strong class="text-on-surface" id="review-fdr-num">FDR-2025-08912</strong></div>
+<div>Tenure: <strong class="text-on-surface" id="review-tenure">3 Years / 36 Months</strong></div>
+</div>
+</div>
+<!-- Card B: Bank Ledger -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Issuing Scheduled Bank</span>
+<div class="font-headline-sm text-headline-sm font-bold text-primary" id="review-bank">State Bank of India (SBI)</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant" id="review-branch">Main Branch, SV Road, Andheri West, Mumbai</p>
+<div class="mt-2 pt-2 text-on-surface-variant font-label-md text-label-md space-y-1">
+<div>IFSC: <strong class="text-on-surface" id="review-ifsc">SBIN0001824</strong></div>
+<div>Pledge: <strong class="text-tertiary-container font-semibold">Member Secretary, AICTE</strong></div>
+</div>
+</div>
+<!-- Card C: Validity & Timeline -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Statutory Validity Dates</span>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Issue Date</span>
+<span class="font-label-md text-label-md font-bold text-primary" id="review-issue-date">15 Apr 2024</span>
+</div>
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Maturity Date</span>
+<span class="font-label-md text-label-md font-bold text-secondary" id="review-maturity-date">15 Apr 2027</span>
+</div>
+</div>
+<div class="mt-2 pt-2 text-on-surface-variant font-label-md text-label-md space-y-1">
+<div>Purpose: <strong class="text-on-surface" id="review-purpose">Extension of Approval (EoA)</strong></div>
+<div>Evidence Files: <strong class="text-tertiary-container font-semibold">2 PDFs Attached &amp; Validated</strong></div>
+</div>
+</div>
+</div>
+<!-- Mandatory Statutory Undertaking Checkbox Box -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-5 h-5 rounded cursor-pointer accent-primary shrink-0" id="statutory-declaration" onchange="toggleSubmitButton()" type="checkbox"/>
+<label class="cursor-pointer font-body-md text-body-md text-on-surface leading-relaxed" for="statutory-declaration">
+<strong class="text-primary">Statutory Declaration under Oaths Act, 1969:</strong>
+              I, authorized signatory of <strong>Rajiv Gandhi Institute of Technology (MH1001)</strong>, hereby solemnly declare and affirm that the FDR details and scanned documents submitted herein are genuine, free of any prior encumbrances, and pledged in joint name with <strong>Member Secretary, AICTE</strong>. I understand that any false declaration shall attract cancellation of institutional approval and legal proceedings under Section 193 of the Indian Penal Code.
+            </label>
+</div>
+</div>
+<!-- Final Action Bar -->
+<div class="flex items-center justify-between pt-space-md">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-all flex items-center gap-1.5" onclick="switchStep(2)" type="button">
+<span class="material-symbols-outlined text-lg">arrow_back</span> Back to Documents
+          </button>
+<button class="px-space-xl py-3 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm opacity-50 cursor-not-allowed transition-all flex items-center gap-2 shadow-sm" disabled="" id="final-submit-btn" onclick="executeStatutorySubmission()">
+<span class="material-symbols-outlined text-xl">gavel</span>
+<span>Submit FDR for AICTE Verification</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SUBMISSION SUCCESS MODAL / CARD OVERLAY -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm flex items-center justify-center p-space-md hidden" id="success-modal">
+<div class="bg-surface-container-lowest max-w-2xl w-full rounded-2xl shadow-2xl p-space-xl flex flex-col gap-space-md animate-fade-in relative">
+<!-- Top Decorative Tri-Color Strip -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary via-surface-container-lowest to-tertiary-container rounded-t-2xl"></div>
+<!-- Icon & Heading -->
+<div class="text-center flex flex-col items-center gap-2 pt-2">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-tertiary-container mb-1">
+<span class="material-symbols-outlined text-4xl">task_alt</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-container bg-surface-container-low px-3 py-1 rounded-full font-bold">Statutory Receipt Lodged</span>
+<h3 class="font-display text-display text-primary tracking-tight">FDR Submitted Successfully!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Your Security Deposit instrument has been enrolled into the AICTE Central Scrutiny Register for regional officer verification.</p>
+</div>
+<!-- Detailed Receipt Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Official Acknowledgement ID</span>
+<div class="font-label-lg text-label-lg font-bold text-primary font-mono tracking-wide">ACK-AICTE-2025-9841</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold px-2.5 py-1 rounded uppercase">Pending Scrutiny</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-2 text-on-surface-variant font-label-md text-label-md">
+<div>Institution: <span class="font-semibold text-on-surface">MH1001 (Mumbai)</span></div>
+<div>FDR Principal: <span class="font-semibold text-primary">₹15,00,000</span></div>
+<div>Bank: <span class="font-semibold text-on-surface">State Bank of India</span></div>
+<div>Lien Status: <span class="font-semibold text-tertiary-container">E-Pledge Registered</span></div>
+<div>Lodged Timestamp: <span class="font-semibold text-on-surface">Today, 11:42 IST</span></div>
+<div>Digital Hash: <span class="font-mono text-on-surface">SHA-256 (Valid)</span></div>
+</div>
+</div>
+<!-- Buttons Grid -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-space-sm">
+<button class="w-full sm:flex-1 py-2.5 px-space-md rounded-lg bg-surface-container-high text-primary font-headline-sm text-headline-sm hover:bg-surface-container-highest transition-all flex items-center justify-center gap-2" onclick="downloadReceiptPdf()" type="button">
+<span class="material-symbols-outlined text-lg">download</span> Download Lodgment Receipt (PDF)
+        </button>
+<button class="w-full sm:w-auto py-2.5 px-space-md rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all font-body-md text-body-md" onclick="closeModalAndReset()" type="button">
+          Submit Another FDR
+        </button>
+<a class="w-full sm:flex-1 py-2.5 px-space-md rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:bg-primary transition-all flex items-center justify-center gap-1.5 shadow-sm" data-path="fdr-repository" href="#">
+          Go to Master Repository <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Notification Toast Simulated Container -->
+<div class="fixed bottom-space-lg left-1/2 -translate-x-1/2 z-50 bg-primary text-on-primary px-space-lg py-2.5 rounded-lg shadow-xl font-label-md text-label-md flex items-center gap-2 transition-all opacity-0 pointer-events-none transform translate-y-4" id="toast-notification">
+<span class="material-symbols-outlined text-tertiary-container text-lg">check_circle</span>
+<span id="toast-message">Draft saved to sovereign secure vault.</span>
+</div>
+</div>
+<script>
+  let currentStep = 1;
+
+  function switchStep(targetStep) {
+    // Hide all step containers
+    document.getElementById('step-1-content').classList.add('hidden');
+    document.getElementById('step-2-content').classList.add('hidden');
+    document.getElementById('step-3-content').classList.add('hidden');
+
+    // Show target
+    const targetContent = document.getElementById('step-' + targetStep + '-content');
+    if (targetContent) {
+      targetContent.classList.remove('hidden');
+    }
+
+    // Reset Stepper Styles
+    for (let i = 1; i <= 3; i++) {
+      const tab = document.getElementById('stepper-tab-' + i);
+      const badge = document.getElementById('step-badge-' + i);
+
+      if (i === targetStep) {
+        tab.className = "flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all bg-primary-container text-on-primary";
+        badge.className = "w-8 h-8 rounded-lg bg-primary-fixed text-primary font-label-md text-label-md flex items-center justify-center font-bold";
+      } else if (i < targetStep) {
+        tab.className = "flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all bg-surface-container-high text-primary hover:bg-surface-container-highest";
+        badge.className = "w-8 h-8 rounded-lg bg-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center justify-center font-bold";
+      } else {
+        tab.className = "flex items-center gap-space-md p-space-sm rounded-lg text-left transition-all text-on-surface-variant hover:bg-surface-container-high";
+        badge.className = "w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md flex items-center justify-center font-bold";
+      }
+    }
+
+    // If entering Step 3, refresh summary values
+    if (targetStep === 3) {
+      syncReviewLedger();
+    }
+
+    currentStep = targetStep;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function syncReviewLedger() {
+    const amountVal = document.getElementById('deposit-amount').value || '15,00,000';
+    document.getElementById('review-amount').textContent = '₹' + amountVal;
+    document.getElementById('review-words').textContent = document.getElementById('amount-in-words').textContent;
+    document.getElementById('review-fdr-num').textContent = document.getElementById('fdr-number').value || 'FDR-2025-08912';
+    document.getElementById('review-bank').textContent = document.getElementById('bank-name').value;
+    document.getElementById('review-branch').textContent = document.getElementById('branch-details').value;
+    document.getElementById('review-ifsc').textContent = document.getElementById('ifsc-code').value;
+    document.getElementById('review-tenure').textContent = document.getElementById('calculated-tenure').textContent;
+    document.getElementById('review-purpose').textContent = document.getElementById('deposit-purpose').value;
+
+    const issueVal = document.getElementById('issue-date').value;
+    const matVal = document.getElementById('maturity-date').value;
+    if (issueVal) {
+      const d1 = new Date(issueVal);
+      document.getElementById('review-issue-date').textContent = d1.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+    }
+    if (matVal) {
+      const d2 = new Date(matVal);
+      document.getElementById('review-maturity-date').textContent = d2.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+    }
+  }
+
+  function validateFdrNumber(input) {
+    const icon = document.getElementById('fdr-valid-icon');
+    if (input.value.trim().length >= 8) {
+      icon.classList.remove('hidden');
+      icon.textContent = 'check_circle';
+      icon.className = 'material-symbols-outlined absolute right-2.5 top-2.5 text-tertiary-container text-base';
+    } else {
+      icon.textContent = 'error';
+      icon.className = 'material-symbols-outlined absolute right-2.5 top-2.5 text-secondary text-base';
+    }
+  }
+
+  function handleIfscInput(input) {
+    const val = input.value.toUpperCase();
+    input.value = val;
+    const badge = document.getElementById('ifsc-status-badge');
+    const helper = document.getElementById('ifsc-helper');
+
+    if (val.length === 11) {
+      badge.textContent = 'API Verified';
+      badge.className = 'absolute right-2 top-2 font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-1.5 py-0.5 rounded font-bold';
+      helper.textContent = 'Verified: Branch located & active in RBI RTGS Core Register';
+      helper.className = 'font-label-sm text-label-sm text-tertiary-container mt-1';
+    } else {
+      badge.textContent = 'Invalid IFSC';
+      badge.className = 'absolute right-2 top-2 font-label-sm text-label-sm bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold';
+      helper.textContent = 'Must be exactly 11 characters (e.g. SBIN0001824)';
+      helper.className = 'font-label-sm text-label-sm text-secondary mt-1';
+    }
+  }
+
+  function handleBankSelect(select) {
+    const branchInput = document.getElementById('branch-details');
+    branchInput.value = select.value + ', Main Apex Branch, Mumbai';
+  }
+
+  function updatePurposeBadge(select) {
+    // Dynamically update guidance if needed
+  }
+
+  function formatAndConvertAmount(input) {
+    let clean = input.value.replace(/[^0-9]/g, '');
+    if (!clean) clean = '0';
+    const num = parseInt(clean, 10);
+    input.value = num.toLocaleString('en-IN');
+
+    // Convert to Indian Denomination Words
+    const wordsDiv = document.getElementById('amount-in-words');
+    if (num >= 10000000) {
+      const cr = (num / 10000000).toFixed(2);
+      wordsDiv.textContent = cr + ' Crore Rupees Only';
+    } else if (num >= 100000) {
+      const lakh = (num / 100000).toFixed(2);
+      wordsDiv.textContent = lakh + ' Lakh Rupees Only';
+    } else if (num >= 1000) {
+      const th = (num / 1000).toFixed(1);
+      wordsDiv.textContent = th + ' Thousand Rupees Only';
+    } else {
+      wordsDiv.textContent = num + ' Rupees Only';
+    }
+  }
+
+  function calculateTenure() {
+    const d1Val = document.getElementById('issue-date').value;
+    const d2Val = document.getElementById('maturity-date').value;
+    if (!d1Val || !d2Val) return;
+
+    const d1 = new Date(d1Val);
+    const d2 = new Date(d2Val);
+
+    let months = (d2.getFullYear() - d1.getFullYear()) * 12 + (d2.getMonth() - d1.getMonth());
+    if (months < 0) months = 0;
+    const years = (months / 12).toFixed(1);
+
+    const tenureLabel = document.getElementById('calculated-tenure');
+    const badge = document.getElementById('tenure-badge');
+
+    tenureLabel.textContent = years + ' Years / ' + months + ' Months';
+
+    if (months >= 36 && months <= 96) {
+      badge.textContent = 'Complies with APH Norms (Min 3 to 8 Yrs)';
+      badge.className = 'font-label-sm text-label-sm bg-tertiary-container text-on-tertiary px-2 py-0.5 rounded font-semibold';
+    } else if (months < 36) {
+      badge.textContent = 'Non-Compliant: Under 3 Years Mandate';
+      badge.className = 'font-label-sm text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded font-semibold';
+    } else {
+      badge.textContent = 'Notice: Exceeds standard 8 Years cap';
+      badge.className = 'font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-semibold';
+    }
+  }
+
+  function simulateFileUpload() {
+    const progress = document.getElementById('dropzone-progress');
+    const bar = document.getElementById('dropzone-bar');
+    progress.classList.remove('hidden');
+    bar.style.width = '0%';
+
+    setTimeout(function() {
+      bar.style.width = '100%';
+    }, 100);
+
+    setTimeout(function() {
+      showToast('Resolution document uploaded & virus-scanned successfully!');
+    }, 1100);
+  }
+
+  function toggleSubmitButton() {
+    const cb = document.getElementById('statutory-declaration');
+    const btn = document.getElementById('final-submit-btn');
+
+    if (cb.checked) {
+      btn.disabled = false;
+      btn.className = "px-space-xl py-3 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:bg-primary transition-all flex items-center gap-2 shadow-sm cursor-pointer";
+    } else {
+      btn.disabled = true;
+      btn.className = "px-space-xl py-3 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm opacity-50 cursor-not-allowed transition-all flex items-center gap-2 shadow-sm";
+    }
+  }
+
+  function executeStatutorySubmission() {
+    const btn = document.getElementById('final-submit-btn');
+    btn.innerHTML = '<span class="material-symbols-outlined text-xl animate-spin">refresh</span> <span>Generating Cryptographic SHA-256 Digest...</span>';
+    btn.disabled = true;
+
+    setTimeout(function() {
+      btn.innerHTML = '<span class="material-symbols-outlined text-xl">gavel</span> <span>Submit FDR for AICTE Verification</span>';
+      btn.disabled = false;
+      document.getElementById('success-modal').classList.remove('hidden');
+    }, 1200);
+  }
+
+  function closeModalAndReset() {
+    document.getElementById('success-modal').classList.add('hidden');
+    document.getElementById('statutory-declaration').checked = false;
+    toggleSubmitButton();
+    switchStep(1);
+    showToast('New FDR registration form initialized.');
+  }
+
+  function downloadReceiptPdf() {
+    showToast('Official Acknowledgement Slip ACK-AICTE-2025-9841 queued for download.');
+  }
+
+  function showDraftToast() {
+    showToast('Draft progress auto-saved in secure cache (TTL: 7 Days)');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast-notification');
+    const message = document.getElementById('toast-message');
+    message.textContent = msg;
+    toast.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(function() {
+      toast.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 3200);
+  }
+</script></main></div></body></html>
